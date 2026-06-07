@@ -216,3 +216,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Block large trajectory PDBs only — cluster rep PDBs are allowed
+*_trajectory*.pdb
+*_traj*.pdb
+
+# Images — not stored here
+*.png
+*.pdf
+*.svg
+*.tiff
+
+# Large simulation files
+*.xtc
+*.dcd
+*.trr
+*.cms
+*.msj
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

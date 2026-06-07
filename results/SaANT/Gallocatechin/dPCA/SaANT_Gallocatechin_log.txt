@@ -1,0 +1,84 @@
+============================================================
+  dPCA PIPELINE — SaANT_Gallocatechin
+  Run started : 2026-05-29 14:47:42
+============================================================
+
+[SECTION 1] Loading trajectory
+  Topology      : gallocatechin.pdb
+  Trajectory    : SaANT_Gallocatechin_trajectory.xtc
+  Frames loaded : 1001
+  Total atoms   : 66164
+  Total residues: 21072
+
+[SECTION 2] Extracting phi/psi dihedral angles
+  Angle array shape     : (1001, 250, 2)  (frames, residues, 2)
+  Residues with phi/psi : 250
+  Saved: SaANT_Gallocatechin_raw_angles.csv
+
+[SECTION 3] Applying sin/cos transformation
+  Sin/cos features added : 1000 columns
+  Saved: SaANT_Gallocatechin_sincos_features.csv
+
+[SECTION 4] Standardising features and running PCA
+  PC1 variance          : 4.22%
+  PC2 variance          : 2.61%
+  PC1+PC2               : 6.83%
+  Cumulative PC1-PC10  : 16.07%
+  PC1 eigenvalue        : 42.2206
+  PC2 eigenvalue        : 26.1251
+  Saved: explained_var, eigenvalues, scree, loadings, projections, scaler
+
+[SECTION 5a] Silhouette analysis
+  k=1: skipped (only 1 cluster found)
+  k=2: average silhouette score = 0.5382
+  k=3: average silhouette score = 0.5881
+  k=4: average silhouette score = 0.5426
+  k=5: average silhouette score = 0.5070
+  k=6: average silhouette score = 0.5132
+  k=7: average silhouette score = 0.5059
+  k=8: average silhouette score = 0.4976
+
+  Best K: 3
+  Saved: SaANT_Gallocatechin_silhouette_scores.csv
+
+[SECTION 5b] K-Means clustering (k=3)
+  Cluster 0: 392 frames (39.2%)
+  Cluster 1: 315 frames (31.5%)
+  Cluster 2: 294 frames (29.4%)
+
+[SECTION 6] Computing Free Energy Landscape FEL
+  Saved: SaANT_Gallocatechin_FEL_dPCA.csv
+  Saved: SaANT_Gallocatechin_dPCA_hist2d.csv
+
+[SECTION 7] Extracting representative structures
+  Cluster 0: representative frame = 513
+  Cluster 1: representative frame = 817
+  Cluster 2: representative frame = 218
+  Saved: SaANT_Gallocatechin_cluster_0_rep.pdb
+  Saved: SaANT_Gallocatechin_cluster_1_rep.pdb
+  Saved: SaANT_Gallocatechin_cluster_2_rep.pdb
+  Saved: SaANT_Gallocatechin_dPCA_master.csv
+
+[SECTION 8] PCA Convergence (Subspace Overlap)
+  25% trajectory → overlap = 0.065
+  50% trajectory → overlap = 0.441
+  75% trajectory → overlap = 0.625
+  100% trajectory → overlap = 1.000
+
+  Convergence verdict : NOT CONVERGED (75% overlap = 0.625)
+  Saved: SaANT_Gallocatechin_PCA_convergence.csv
+
+============================================================
+  dPCA PIPELINE COMPLETE
+============================================================
+  Frames analysed      : 1001
+  Residues (φ/ψ)       : 250
+  Sin/cos features     : 1000
+  PCs retained         : 10
+  Variance PC1+PC2     : 6.83%
+  Cumulative PC1-PC10  : 16.07%
+  Best K (silhouette)  : 3
+  Convergence verdict  : NOT CONVERGED (0.625 at 75%)
+  Run ended   : 2026-05-29 14:48:26
+Total time  : 0:00:43.794741
+============================================================

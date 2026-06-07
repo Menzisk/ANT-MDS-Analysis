@@ -1,0 +1,85 @@
+============================================================
+  dPCA PIPELINE — SaANT_Apo
+  Run date/time : 2026-05-25 21:55:04
+============================================================
+
+[SECTION 1] Loading trajectory
+  Topology      : apo.pdb
+  Trajectory    : SaANT_Apo_trajectory.xtc
+  Frames loaded : 1001
+  Total atoms   : 65105
+  Total residues: 20728
+
+[SECTION 2] Extracting phi/psi dihedral angles
+  Angle array shape     : (1001, 250, 2)  (frames, residues, 2)
+  Residues with phi/psi : 250
+  Saved: SaANT_Apo_raw_angles.csv
+
+[SECTION 3] Applying sin/cos transformation
+  Sin/cos features added : 1000 columns
+  Saved: SaANT_Apo_sincos_features.csv
+
+[SECTION 4] Standardising features and running PCA
+  PC1 variance          : 5.82%
+  PC2 variance          : 2.96%
+  PC1+PC2               : 8.78%
+  Cumulative PC1-PC10  : 19.30%
+  PC1 eigenvalue        : 58.2453
+  PC2 eigenvalue        : 29.6455
+  Saved: explained_var, eigenvalues, scree, loadings, projections, scaler
+
+[SECTION 5a] Silhouette analysis
+  k=1: skipped (only 1 cluster found)
+  k=2: average silhouette score = 0.5398
+  k=3: average silhouette score = 0.6062
+  k=4: average silhouette score = 0.6271
+  k=5: average silhouette score = 0.5734
+  k=6: average silhouette score = 0.5054
+  k=7: average silhouette score = 0.4824
+  k=8: average silhouette score = 0.4788
+
+  Best K: 4
+  Saved: SaANT_Apo_silhouette_scores.csv
+
+[SECTION 5b] K-Means clustering (k=4)
+  Cluster 0: 154 frames (15.4%)
+  Cluster 1: 293 frames (29.3%)
+  Cluster 2: 268 frames (26.8%)
+  Cluster 3: 286 frames (28.6%)
+
+[SECTION 6] Computing Free Energy Landscape FEL
+  Saved: SaANT_Apo_FEL_dPCA.csv
+  Saved: SaANT_Apo_dPCA_hist2d.csv
+
+[SECTION 7] Extracting representative structures
+  Cluster 0: representative frame = 38
+  Cluster 1: representative frame = 222
+  Cluster 2: representative frame = 907
+  Cluster 3: representative frame = 577
+  Saved: SaANT_Apo_cluster_0_rep.pdb
+  Saved: SaANT_Apo_cluster_1_rep.pdb
+  Saved: SaANT_Apo_cluster_2_rep.pdb
+  Saved: SaANT_Apo_cluster_3_rep.pdb
+  Saved: SaANT_Apo_dPCA_master.csv
+
+[SECTION 8] PCA Convergence (Subspace Overlap)
+  25% trajectory → overlap = 0.278
+  50% trajectory → overlap = 0.408
+  75% trajectory → overlap = 0.666
+  100% trajectory → overlap = 1.000
+
+  Convergence verdict : NOT CONVERGED (75% overlap = 0.666)
+  Saved: SaANT_Apo_PCA_convergence.csv
+
+============================================================
+  dPCA PIPELINE COMPLETE
+============================================================
+  Frames analysed      : 1001
+  Residues (φ/ψ)       : 250
+  Sin/cos features     : 1000
+  PCs retained         : 10
+  Variance PC1+PC2     : 8.78%
+  Cumulative PC1-PC10  : 19.30%
+  Best K (silhouette)  : 4
+  Convergence verdict  : NOT CONVERGED (0.666 at 75%)
+============================================================

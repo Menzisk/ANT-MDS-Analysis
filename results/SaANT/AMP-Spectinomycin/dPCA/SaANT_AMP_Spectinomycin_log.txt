@@ -1,0 +1,82 @@
+============================================================
+  dPCA PIPELINE — SaANT_AMP_Spectinomycin
+  Run date/time : 2026-06-04 18:57:40
+============================================================
+
+[SECTION 1] Loading trajectory
+  Topology      : ampspectinomycin.pdb
+  Trajectory    : Sa_AMP_Spectinomycin_trajectory.xtc
+  Frames loaded : 1001
+  Total atoms   : 66286
+  Total residues: 21098
+
+[SECTION 2] Extracting phi/psi dihedral angles
+  Angle array shape     : (1001, 250, 2)  (frames, residues, 2)
+  Residues with phi/psi : 250
+  Saved: SaANT_AMP_Spectinomycin_raw_angles.csv
+
+[SECTION 3] Applying sin/cos transformation
+  Sin/cos features added : 1000 columns
+  Saved: SaANT_AMP_Spectinomycin_sincos_features.csv
+
+[SECTION 4] Standardising features and running PCA
+  PC1 variance          : 6.54%
+  PC2 variance          : 3.35%
+  PC1+PC2               : 9.88%
+  Cumulative PC1-PC10  : 21.17%
+  PC1 eigenvalue        : 65.4228
+  PC2 eigenvalue        : 33.4845
+  Saved: explained_var, eigenvalues, scree, loadings, projections, scaler
+
+[SECTION 5a] Silhouette analysis
+  k=1: skipped (only 1 cluster found)
+  k=2: average silhouette score = 0.5565
+  k=3: average silhouette score = 0.6272
+  k=4: average silhouette score = 0.5605
+  k=5: average silhouette score = 0.5458
+  k=6: average silhouette score = 0.5406
+  k=7: average silhouette score = 0.4654
+  k=8: average silhouette score = 0.4796
+
+  Best K: 3
+  Saved: SaANT_AMP_Spectinomycin_silhouette_scores.csv
+
+[SECTION 5b] K-Means clustering (k=3)
+  Cluster 0: 337 frames (33.7%)
+  Cluster 1: 457 frames (45.7%)
+  Cluster 2: 207 frames (20.7%)
+
+[SECTION 6] Computing Free Energy Landscape FEL
+  Saved: SaANT_AMP_Spectinomycin_FEL_dPCA.csv
+  Saved: SaANT_AMP_Spectinomycin_dPCA_hist2d.csv
+
+[SECTION 7] Extracting representative structures
+  Cluster 0: representative frame = 440
+  Cluster 1: representative frame = 896
+  Cluster 2: representative frame = 142
+  Saved: SaANT_AMP_Spectinomycin_cluster_0_rep.pdb
+  Saved: SaANT_AMP_Spectinomycin_cluster_1_rep.pdb
+  Saved: SaANT_AMP_Spectinomycin_cluster_2_rep.pdb
+  Saved: SaANT_AMP_Spectinomycin_dPCA_master.csv
+
+[SECTION 8] PCA Convergence (Subspace Overlap)
+  25% trajectory → overlap = 0.205
+  50% trajectory → overlap = 0.535
+  75% trajectory → overlap = 0.798
+  100% trajectory → overlap = 1.000
+
+  Convergence verdict : MARGINAL (75% overlap = 0.798)
+  Saved: SaANT_AMP_Spectinomycin_PCA_convergence.csv
+
+============================================================
+  dPCA PIPELINE COMPLETE
+============================================================
+  Frames analysed      : 1001
+  Residues (φ/ψ)       : 250
+  Sin/cos features     : 1000
+  PCs retained         : 10
+  Variance PC1+PC2     : 9.88%
+  Cumulative PC1-PC10  : 21.17%
+  Best K (silhouette)  : 3
+  Convergence verdict  : MARGINAL (0.798 at 75%)
+============================================================

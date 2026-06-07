@@ -1,0 +1,82 @@
+============================================================
+  dPCA PIPELINE — AbANT_Plazomicin
+  Run date/time : 2026-05-24 21:03:43
+============================================================
+
+[SECTION 1] Loading trajectory
+  Topology      : plazomicin.pdb
+  Trajectory    : AbPlazomicin_trajectory.xtc
+  Frames loaded : 1001
+  Total atoms   : 64245
+  Total residues: 20417
+
+[SECTION 2] Extracting phi/psi dihedral angles
+  Angle array shape     : (1001, 256, 2)  (frames, residues, 2)
+  Residues with phi/psi : 256
+  Saved: AbANT_Plazomicin_raw_angles.csv
+
+[SECTION 3] Applying sin/cos transformation
+  Sin/cos features added : 1024 columns
+  Saved: AbANT_Plazomicin_sincos_features.csv
+
+[SECTION 4] Standardising features and running PCA
+  PC1 variance          : 6.56%
+  PC2 variance          : 3.29%
+  PC1+PC2               : 9.85%
+  Cumulative PC1-PC10  : 20.19%
+  PC1 eigenvalue        : 67.2070
+  PC2 eigenvalue        : 33.7350
+  Saved: explained_var, eigenvalues, scree, loadings, projections, scaler
+
+[SECTION 5a] Silhouette analysis
+  k=1: skipped (only 1 cluster found)
+  k=2: average silhouette score = 0.5525
+  k=3: average silhouette score = 0.6329
+  k=4: average silhouette score = 0.6129
+  k=5: average silhouette score = 0.5852
+  k=6: average silhouette score = 0.5158
+  k=7: average silhouette score = 0.5141
+  k=8: average silhouette score = 0.4614
+
+  Best K: 3
+  Saved: AbANT_Plazomicin_silhouette_scores.csv
+
+[SECTION 5b] K-Means clustering (k=3)
+  Cluster 0: 351 frames (35.1%)
+  Cluster 1: 407 frames (40.7%)
+  Cluster 2: 243 frames (24.3%)
+
+[SECTION 6] Computing Free Energy Landscape FEL
+  Saved: AbANT_Plazomicin_FEL_dPCA.csv
+  Saved: AbANT_Plazomicin_dPCA_hist2d.csv
+
+[SECTION 7] Extracting representative structures
+  Cluster 0: representative frame = 452
+  Cluster 1: representative frame = 744
+  Cluster 2: representative frame = 110
+  Saved: AbANT_Plazomicin_cluster_0_rep.pdb
+  Saved: AbANT_Plazomicin_cluster_1_rep.pdb
+  Saved: AbANT_Plazomicin_cluster_2_rep.pdb
+  Saved: AbANT_Plazomicin_dPCA_master.csv
+
+[SECTION 8] PCA Convergence (Subspace Overlap)
+  25% trajectory → overlap = 0.122
+  50% trajectory → overlap = 0.518
+  75% trajectory → overlap = 0.837
+  100% trajectory → overlap = 1.000
+
+  Convergence verdict : MARGINAL (75% overlap = 0.837)
+  Saved: AbANT_Plazomicin_PCA_convergence.csv
+
+============================================================
+  dPCA PIPELINE COMPLETE
+============================================================
+  Frames analysed      : 1001
+  Residues (φ/ψ)       : 256
+  Sin/cos features     : 1024
+  PCs retained         : 10
+  Variance PC1+PC2     : 9.85%
+  Cumulative PC1-PC10  : 20.19%
+  Best K (silhouette)  : 3
+  Convergence verdict  : MARGINAL (0.837 at 75%)
+============================================================

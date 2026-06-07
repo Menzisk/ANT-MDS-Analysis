@@ -1,0 +1,82 @@
+============================================================
+  dPCA PIPELINE — AbANT_Apo
+  Run date/time : 2026-05-25 21:45:56
+============================================================
+
+[SECTION 1] Loading trajectory
+  Topology      : apo.pdb
+  Trajectory    : AbANTApo_trajectory.xtc
+  Frames loaded : 1001
+  Total atoms   : 64118
+  Total residues: 20409
+
+[SECTION 2] Extracting phi/psi dihedral angles
+  Angle array shape     : (1001, 256, 2)  (frames, residues, 2)
+  Residues with phi/psi : 256
+  Saved: AbANT_Apo_raw_angles.csv
+
+[SECTION 3] Applying sin/cos transformation
+  Sin/cos features added : 1024 columns
+  Saved: AbANT_Apo_sincos_features.csv
+
+[SECTION 4] Standardising features and running PCA
+  PC1 variance          : 4.77%
+  PC2 variance          : 2.52%
+  PC1+PC2               : 7.29%
+  Cumulative PC1-PC10  : 17.26%
+  PC1 eigenvalue        : 48.8731
+  PC2 eigenvalue        : 25.8755
+  Saved: explained_var, eigenvalues, scree, loadings, projections, scaler
+
+[SECTION 5a] Silhouette analysis
+  k=1: skipped (only 1 cluster found)
+  k=2: average silhouette score = 0.5800
+  k=3: average silhouette score = 0.6478
+  k=4: average silhouette score = 0.5983
+  k=5: average silhouette score = 0.5342
+  k=6: average silhouette score = 0.4661
+  k=7: average silhouette score = 0.4324
+  k=8: average silhouette score = 0.4277
+
+  Best K: 3
+  Saved: AbANT_Apo_silhouette_scores.csv
+
+[SECTION 5b] K-Means clustering (k=3)
+  Cluster 0: 413 frames (41.3%)
+  Cluster 1: 402 frames (40.2%)
+  Cluster 2: 186 frames (18.6%)
+
+[SECTION 6] Computing Free Energy Landscape FEL
+  Saved: AbANT_Apo_FEL_dPCA.csv
+  Saved: AbANT_Apo_dPCA_hist2d.csv
+
+[SECTION 7] Extracting representative structures
+  Cluster 0: representative frame = 530
+  Cluster 1: representative frame = 870
+  Cluster 2: representative frame = 92
+  Saved: AbANT_Apo_cluster_0_rep.pdb
+  Saved: AbANT_Apo_cluster_1_rep.pdb
+  Saved: AbANT_Apo_cluster_2_rep.pdb
+  Saved: AbANT_Apo_dPCA_master.csv
+
+[SECTION 8] PCA Convergence (Subspace Overlap)
+  25% trajectory → overlap = 0.259
+  50% trajectory → overlap = 0.500
+  75% trajectory → overlap = 0.505
+  100% trajectory → overlap = 1.000
+
+  Convergence verdict : NOT CONVERGED (75% overlap = 0.505)
+  Saved: AbANT_Apo_PCA_convergence.csv
+
+============================================================
+  dPCA PIPELINE COMPLETE
+============================================================
+  Frames analysed      : 1001
+  Residues (φ/ψ)       : 256
+  Sin/cos features     : 1024
+  PCs retained         : 10
+  Variance PC1+PC2     : 7.29%
+  Cumulative PC1-PC10  : 17.26%
+  Best K (silhouette)  : 3
+  Convergence verdict  : NOT CONVERGED (0.505 at 75%)
+============================================================
