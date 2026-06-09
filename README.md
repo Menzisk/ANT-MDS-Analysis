@@ -13,7 +13,7 @@ ANT(3″)-Ia aminoglycoside nucleotidyltransferase orthologues from
 
 ## Repository Contents
 
-- `scripts/` — dPCA, FEL, DCCM, and trj2xtc pipelines
+- `scripts/` — dPCA, FEL, DCCM, and trj2xtc pipelines and MD simulation property plots           (RMSD, RMSF, ROG, Ligand-RMSD, Ligand-SASA, interaction heatmaps
 - `results/[orthologue]/[system]/dPCA/` — All dPCA outputs including
   cluster representative PDBs, projection CSVs, FEL data, eigenvalues,
   silhouette scores, loadings, scree, and log files
