@@ -166,7 +166,7 @@ All post-dynamics analysis scripts are available in this repository:
 | `SASA_RMSD.py` | SASA computation |
 | `dpca_pipeline.py` | dPCA with sin/cos transformation |
 | `fel_pipeline.py` | FEL via Boltzmann inversion |
-| `dccm_pipeline.py` | DCCM and delta-DCCM |
+| `dccm_pipeline.py` | DCCM |
 | `heatmap.py` | Heatmap visualisation |
 | `trj2xtc.py` | Trajectory format conversion |
 
