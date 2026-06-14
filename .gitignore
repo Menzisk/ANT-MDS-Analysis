@@ -220,12 +220,6 @@ __marimo__/
 *_trajectory*.pdb
 *_traj*.pdb
 
-# Images — not stored here
-*.png
-*.pdf
-*.svg
-*.tiff
-
 # Large simulation files
 *.xtc
 *.dcd
