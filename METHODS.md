@@ -48,8 +48,7 @@ PC --> PC1[dPCA + FEL + DCCM<br/>Python Pipeline — Controls]
 
 %% --- AMBER 150 ns (HTVS HITS ONLY) ---
 K --> L[AMBER18 MD — HTVS Hits Only<br/>150 ns · ff14SB · GAFF2<br/>TIP3P · 0.15 M MgCl2]
-L --> L1[dPCA + FEL + DCCM<br/>Python Pipeline — AMBER]
-L --> L2[Binding Free Energy<br/>MM/GBSA · MM/PBSA — AMBER]
+L --> L1[Binding Free Energy<br/>MM/GBSA · MM/PBSA — AMBER]
 
 %% --- COMPARATIVE OUTPUT ---
 K1 --> M[Comparative Analysis<br/>AbANT vs SaANT]
@@ -110,10 +109,7 @@ Systems simulated:
 - Gallocatechin · SaANT
 - Apigenin-7-O-(2G-rhamnosyl)gentiobioside · AbANT
 
-#### 4.1 dPCA, FEL, and DCCM: AMBER Trajectories (Python Pipeline)
-The same dPCA, FEL, and DCCM Python pipeline was applied to AMBER 150 ns trajectories for the four HTVS-selected systems to enable direct comparison with Desmond-derived conformational landscapes.
-
-#### 4.2 Binding Free Energy: MM/GBSA and MM/PBSA
+#### 4.1 Binding Free Energy: MM/GBSA and MM/PBSA
 MM/GBSA and MM/PBSA binding free energy calculations were performed on representative snapshots extracted from stable AMBER trajectory windows for the four HTVS-selected systems. Positive control systems were excluded from this analysis.
 
 ### 5. Comparative Analysis
