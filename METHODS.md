@@ -55,14 +55,13 @@ K1 --> M[Comparative Analysis<br/>AbANT vs SaANT]
 K2 --> M
 PC1 --> M
 L1 --> M
-L2 --> M
 J --> M
 
 %% --- CLASS ASSIGNMENT ---
 class A,B,C,D,E prep;
 class F,G,G2,H dock;
 class I,J,K,K1,K2,PC,PC1 desmond;
-class L,L1,L2 amber;
+class L,L1 amber;
 class M final;
 ```
 
