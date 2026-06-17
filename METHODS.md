@@ -47,7 +47,7 @@ I --> PC{Positive Controls<br/>ATP · Spectinomycin<br/>AMP-Spectinomycin<br/>Ab
 PC --> PC1[dPCA + FEL + DCCM<br/>Python Pipeline — Controls]
 
 %% --- AMBER 150 ns (HTVS HITS ONLY) ---
-K --> L[AMBER18 MD — HTVS Hits Only<br/>150 ns · ff14SB · GAFF2<br/>TIP3P · 0.15 M MgCl2]
+K --> L[AMBER14&18 MD — HTVS Hits Only<br/>150 ns · ff14SB · GAFF2<br/>TIP3P · 0.15 M MgCl2]
 L --> L1[Binding Free Energy<br/>MM/GBSA · MM/PBSA — AMBER]
 
 %% --- COMPARATIVE OUTPUT ---
@@ -99,8 +99,8 @@ Dihedral Principal Component Analysis (dPCA), Free Energy Landscape (FEL), and D
 
 dPCA was performed using sin/cos transformation of backbone dihedral angles (φ/ψ) following Altis et al. (2007), implemented in MDAnalysis with StandardScaler normalisation and scikit-learn PCA. FEL was constructed via Boltzmann inversion of the PC1/PC2 probability density. DCCM was computed from Cα positional fluctuations to map correlated and anti-correlated residue motions.
 
-### 4. AMBER18 MD Simulations: HTVS Hits Only (150 ns)
-The four HTVS-selected systems were independently re-simulated using the AMBER18 suite for 150 ns to enable MM/GBSA binding free energy calculations and cross-platform validation of conformational dynamics. Systems were parameterised with the ff14SB force field for proteins and GAFF2 for small molecules, solvated in a TIP3P explicit water box with 0.15 M MgCl₂.
+### 4. AMBER14&18 MD Simulations: HTVS Hits Only (150 ns)
+AMBER 14 suite was used to generate the topology of the four HTVS-selected systems, then they were independently re-simulated using the AMBER18 suite for 150 ns to enable MM/GBSA binding free energy calculations and cross-platform validation of conformational dynamics. Systems were parameterised with the ff14SB force field for proteins and GAFF2 for small molecules, solvated in a TIP3P explicit water box with 0.15 M MgCl₂.
 
 Systems simulated:
 - Plazomicin · AbANT
