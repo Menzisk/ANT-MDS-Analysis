@@ -1,0 +1,283 @@
+r_i_glide_energy,i_m_source_file_index,s_m_Source_File,r_qp_QPlogPoct,i_qp_HumanOralAbsorption,r_i_glide_lipo,i_sd_PUBCHEM\_BOND\_DEF\_STEREO\_COUNT,s_epik_cmdline,s_m_Source_Path,r_qp_ACxDN^.5/SA,s_sd_PUBCHEM\_COORDINATE\_TYPE,r_qp_QPlogPw,r_epik_Charging_Adjusted_Penalty,b_lp_Chiralities_Consistent,i_qp_#amide,i_qp_#stars,i_qp_#ringatoms,r_qp_SAamideO,r_qp_QPlogPo/w,r_qp_FOSA,i_qp_#amine,r_sd_PUBCHEM\_MMFF94\_ENERGY,i_sd_PUBCHEM\_ISOTOPIC\_ATOM\_COUNT,r_i_glide_emodel,r_qp_QPpolrz,r_qp_EA(eV),r_i_glide_evdw,r_i_glide_ecoul,r_i_glide_ligand_efficiency_ln,i_i_glide_posenum,s_epik_input,r_i_glide_metal,r_qp_dip^2/V,r_qp_mol_MW,r_i_glide_eff_state_penalty,s_sd_PUBCHEM\_CONFORMER\_DIVERSEORDER,r_epik_State_Penalty,i_qp_RuleOfThree,i_sd_PUBCHEM\_ATOM\_UDEF\_STEREO\_COUNT,r_sd_PUBCHEM\_SHAPE\_VOLUME,r_qp_QPPMDCK,i_qp_#NandO,i_m_ct_stereo_status,r_sd_PUBCHEM\_CONFORMER\_RMSD,r_i_glide_ligand_efficiency,i_qp_CNS,s_lp_label,r_qp_dipole,r_i_glide_ligand_efficiency_sa,r_epik_Ionization_Penalty_Neutral,s_sd_PUBCHEM\_SHAPE\_FINGERPRINT,s_i_glide_gridfile,r_qp_IP(eV),r_i_glide_rewards,i_m_Source_File_Index,s_epik_Chemistry_Notes,s_vsw_variant,i_epik_Tot_Q,r_qp_CIQPlogS,s_m_entry_name,i_i_glide_rotatable_bonds,i_m_ct_enhanced_stereo_status,r_qp_volume,r_qp_PercentHumanOralAbsorption,r_qp_QPlogKp,i_sd_PUBCHEM\_HEAVY\_ATOM\_COUNT,r_qp_accptHB,r_i_glide_einternal,i_qp_#rotor,r_qp_WPSA,i_sd_PUBCHEM\_COMPOUND\_CID,r_qp_donorHB,r_qp_QPlogPC16,r_i_glide_erotb,i_f3d_flags,r_qp_FISA,r_qp_Jm,s_sd_PUBCHEM\_PHARMACOPHORE\_FEATURES,i_i_glide_confnum,i_qp_#noncon,s_sd_PUBCHEM\_MMFF94\_PARTIAL\_CHARGES,b_sd_chiral_flag,i_lp_mmshare_version,i_i_glide_lignum,i_qp_#in56,r_i_docking_score,r_epik_Ionization_Penalty,s_sd_PUBCHEM\_CONFORMER\_ID,r_epik_Ionization_Penalty_Charging,s_vsw_compound_code,r_qp_QPlogHERG,r_i_glide_hbond,i_sd_PUBCHEM\_ATOM\_DEF\_STEREO\_COUNT,r_qp_SAfluorine,s_lp_Variant,r_i_glide_esite,r_qp_QPlogKhsa,s_sd_PUBCHEM\_SHAPE\_MULTIPOLES,i_qp_#rtvFG,r_i_glide_gscore,r_sd_PUBCHEM\_EFFECTIVE\_ROTOR\_COUNT,s_m_title,i_qp_#nonHatm,r_qp_SASA,i_epik_Tot_abs_Q,i_qp_RuleOfFive,i_sd_PUBCHEM\_CACTVS\_TAUTO\_COUNT,i_m_ct_format,r_qp_PSA,i_sd_PUBCHEM\_COMPONENT\_COUNT,r_qp_QPPCaco,i_qp_#acid,s_m_entry_id,i_qp_#amidine,r_qp_QPlogS,i_sd_PUBCHEM\_BOND\_UDEF\_STEREO\_COUNT,i_qp_#in34,i_qp_#metab,s_m_source_file,s_lp_Force_Field,i_sd_version,r_sd_PUBCHEM\_FEATURE\_SELFOVERLAP,r_qp_PISA,r_qp_QPlogBB,r_qp_glob,r_lp_Energy,r_sd_PUBCHEM\_SHAPE\_SELFOVERLAP
+-67.3399562835693,22,Plazomicin.sdf,48.859,1,-0.165153994568797,0,J2VwaWtfcHl0aG9uJywgJy1waCcsICc3LjAwMDAwMCcsICctcGh0JywgJzIuMDAwMDAwJywgJy1tcycsICcxNicsICctdG4nLCAnOCcsICctbWEnLCAnMjAwJywgJy1pbWFlJywgJzxpbmZpbGUubWFlPicsICctb21hZScsICc8b3V0ZmlsZS5tYWU+Jw==,C:\Users\HPC-3\Desktop\Menzi\Clinic_Ag,0.0948346,"2
+5
+10",42.313,1.42299143402015,1,1,11,18,11.294,-5.52,535.41,5,76.6037,0,-122.585130992611,48.795,-1.146,-25.0388507843018,-42.3011054992676,-1.72792943048036,165,W09IXVtDQF0xKFtDSDNdKVtDQEhdKFtOSF1bQ0gzXSlbQ0BASF0oW09IXSlbQ0BIXShPW0NIMl0xKU9bQ0BIXTJbQ0BIXShbTkhdQyg9TylbQ0BASF0oW09IXSlbQ0gyXVtDSDJdW05IMl0pW0NIMl1bQ0BIXShbTkgyXSlbQ0BIXShbQ0BASF0yW09IXSlPW0NASF0zT0MoPVtDSF1bQ0gyXVtDQEhdM1tOSDJdKVtDSDJdW05IXVtDSDJdW0NIMl1bT0hd,-0.0,0.0299812,592.688,1.0425,"1
+24
+6
+3
+5
+23
+4
+16
+17
+2
+20
+22
+15
+21
+7
+11
+14
+8
+26
+25
+13
+18
+10
+9
+12
+19",1.0425,2,0,432.5,0.084,16,1,1.4,-0.198651704798744,-2,22_sdstereoexpander_1_neutralizer_1_epik_3_stereoizer_1,7.143,-0.684994232470523,0.4321,"10006869 2 18269552750568080037
+10074138 170 18269538598149478499
+10290309 65 18337108961155057261
+11049842 53 18262252028019644524
+11607047 403 18336554845680461467
+12788726 201 18046617078510843010
+13692114 37 18409448081287959571
+13757389 114 18050862296694374934
+15200665 1 18339369655123429841
+19319366 153 18270672078642437228
+21033648 29 18200587124787565752
+21703447 108 18120659033423511835
+22956985 138 17975701593079852708
+23559900 14 17686338664513349317
+4144715 1 17545602253904402521
+6691757 9 18122592120920417216
+6700243 42 17477526391630624276
+6703917 75 18339380612129003060
+79837 15 18266718299532980426",glide-grid_Sa3ANT_avrg,8.868,-2.15019310358131,1,"This compound contains an acetal/aminal-like group ( X-CH(R)-Y where X, Y are N, S, or O) that may be acid/base labile, releasing an aldehyde.",22-3,4,3.7,Plazomicin.1,19,2,1701.914,0.0,-8.944,41,21.9,26.3797187805176,21,0.0,42613186,14.0,19.451,0.41522827657654,0,294.857,0.0674744542445247,"29
+1 1 acceptor
+1 10 acceptor
+1 10 donor
+1 11 donor
+1 12 cation
+1 12 donor
+1 13 cation
+1 13 donor
+1 14 cation
+1 14 donor
+1 15 cation
+1 15 donor
+1 16 cation
+1 16 donor
+1 2 acceptor
+1 3 acceptor
+1 4 acceptor
+1 4 donor
+1 5 acceptor
+1 5 donor
+1 6 acceptor
+1 6 donor
+1 7 acceptor
+1 8 acceptor
+1 9 acceptor
+1 9 donor
+6 17 18 19 20 21 22 rings
+6 3 23 24 25 26 27 rings
+6 7 28 30 32 35 36 rings",36,14,"53
+1 -0.56
+10 -0.68
+11 -0.73
+12 -0.99
+13 -0.9
+14 -0.99
+15 -0.9
+16 -0.99
+17 0.28
+18 0.3
+19 0.28
+2 -0.56
+20 0.28
+21 0.27
+23 0.56
+24 0.27
+25 0.28
+26 0.28
+27 0.28
+28 0.56
+3 -0.56
+30 0.27
+31 0.57
+32 0.14
+33 0.34
+34 0.27
+35 -0.06
+36 -0.29
+38 0.41
+39 0.27
+4 -0.68
+40 0.27
+41 0.28
+5 -0.68
+52 0.37
+55 0.36
+56 0.36
+58 0.4
+6 -0.68
+62 0.36
+64 0.4
+65 0.4
+7 -0.36
+72 0.15
+73 0.36
+74 0.36
+79 0.4
+8 -0.57
+82 0.36
+83 0.36
+84 0.36
+89 0.4
+9 -0.68",1,56135,69,18,-8.14471989674849,0.8126,028A39C200000001,0.3805,22,-7.221,-1.59708635189558,12,0.0,42613186-3,-0.43807218406425,-1.987,"755.18
+13.64
+9.31
+1.78
+14.3
+19.21
+0.42
+-14.83
+8.38
+0.35
+-0.42
+-1.22
+-0.28
+-0.17",2,-9.18721989674849,17.2,42613186,41,864.055,4,3,2,2,254.925,1,0.2,0,121510,0,2.0,0,0,13,vsw_avrg-LIGPREP-001-in.maegz,OPLS_2005,0,147.306,33.787,-2.993,0.7978394,65.75615,1534.094
+-67.3399562835693,23,Plazomicin.sdf,48.861,1,-0.165153994568797,0,J2VwaWtfcHl0aG9uJywgJy1waCcsICc3LjAwMDAwMCcsICctcGh0JywgJzIuMDAwMDAwJywgJy1tcycsICcxNicsICctdG4nLCAnOCcsICctbWEnLCAnMjAwJywgJy1pbWFlJywgJzxpbmZpbGUubWFlPicsICctb21hZScsICc8b3V0ZmlsZS5tYWU+Jw==,C:\Users\HPC-3\Desktop\Menzi\Clinic_Ag,0.0948278,"2
+5
+10",42.312,1.42299143402015,1,1,11,18,11.282,-5.52,535.494,5,76.6037,0,-122.585130992611,48.798,-1.147,-25.0388507843018,-42.3011054992676,-1.72792943048036,165,W09IXVtDQF0xKFtDSDNdKVtDQEhdKFtOSF1bQ0gzXSlbQ0BASF0oW09IXSlbQ0BIXShPW0NIMl0xKU9bQ0BIXTJbQ0BIXShbTkhdQyg9TylbQ0BASF0oW09IXSlbQ0gyXVtDSDJdW05IMl0pW0NIMl1bQ0BIXShbTkgyXSlbQ0BIXShbQ0BASF0yW09IXSlPW0NASF0zT0MoPVtDSF1bQ0gyXVtDQEhdM1tOSDJdKVtDSDJdW05IXVtDSDJdW0NIMl1bT0hd,-0.0,0.0300411,592.688,1.0425,"1
+24
+6
+3
+5
+23
+4
+16
+17
+2
+20
+22
+15
+21
+7
+11
+14
+8
+26
+25
+13
+18
+10
+9
+12
+19",1.0425,2,0,432.5,0.084,16,1,1.4,-0.198651704798744,-2,23_sdstereoexpander_1_neutralizer_1_epik_3_stereoizer_1,7.15,-0.684994232470523,0.4321,"10006869 2 18269552750568080037
+10074138 170 18269538598149478499
+10290309 65 18337108961155057261
+11049842 53 18262252028019644524
+11607047 403 18336554845680461467
+12788726 201 18046617078510843010
+13692114 37 18409448081287959571
+13757389 114 18050862296694374934
+15200665 1 18339369655123429841
+19319366 153 18270672078642437228
+21033648 29 18200587124787565752
+21703447 108 18120659033423511835
+22956985 138 17975701593079852708
+23559900 14 17686338664513349317
+4144715 1 17545602253904402521
+6691757 9 18122592120920417216
+6700243 42 17477526391630624276
+6703917 75 18339380612129003060
+79837 15 18266718299532980426",glide-grid_Sa3ANT_avrg,8.868,-2.15019310358131,1,"This compound contains an acetal/aminal-like group ( X-CH(R)-Y where X, Y are N, S, or O) that may be acid/base labile, releasing an aldehyde.",23-3,4,3.7,Plazomicin.1,19,2,1701.982,0.0,-8.943,41,21.9,26.3797187805176,21,0.0,42613186,14.0,19.452,0.41522827657654,0,294.833,0.067543918862731,"29
+1 1 acceptor
+1 10 acceptor
+1 10 donor
+1 11 donor
+1 12 cation
+1 12 donor
+1 13 cation
+1 13 donor
+1 14 cation
+1 14 donor
+1 15 cation
+1 15 donor
+1 16 cation
+1 16 donor
+1 2 acceptor
+1 3 acceptor
+1 4 acceptor
+1 4 donor
+1 5 acceptor
+1 5 donor
+1 6 acceptor
+1 6 donor
+1 7 acceptor
+1 8 acceptor
+1 9 acceptor
+1 9 donor
+6 17 18 19 20 21 22 rings
+6 3 23 24 25 26 27 rings
+6 7 28 30 32 35 36 rings",36,14,"53
+1 -0.56
+10 -0.68
+11 -0.73
+12 -0.99
+13 -0.9
+14 -0.99
+15 -0.9
+16 -0.99
+17 0.28
+18 0.3
+19 0.28
+2 -0.56
+20 0.28
+21 0.27
+23 0.56
+24 0.27
+25 0.28
+26 0.28
+27 0.28
+28 0.56
+3 -0.56
+30 0.27
+31 0.57
+32 0.14
+33 0.34
+34 0.27
+35 -0.06
+36 -0.29
+38 0.41
+39 0.27
+4 -0.68
+40 0.27
+41 0.28
+5 -0.68
+52 0.37
+55 0.36
+56 0.36
+58 0.4
+6 -0.68
+62 0.36
+64 0.4
+65 0.4
+7 -0.36
+72 0.15
+73 0.36
+74 0.36
+79 0.4
+8 -0.57
+82 0.36
+83 0.36
+84 0.36
+89 0.4
+9 -0.68",1,56135,74,18,-8.14471989674849,0.8126,028A39C200000001,0.3805,23,-7.221,-1.59708635189558,12,0.0,42613186-3,-0.43807218406425,-1.987,"755.18
+13.64
+9.31
+1.78
+14.3
+19.21
+0.42
+-14.83
+8.38
+0.35
+-0.42
+-1.22
+-0.28
+-0.17",2,-9.18721989674849,17.2,42613186,41,864.117,4,3,2,2,254.901,1,0.2,0,121510,0,2.0,0,0,13,vsw_avrg-LIGPREP-001-in.maegz,OPLS_2005,0,147.306,33.79,-2.993,0.7978033,65.756746,1534.094
