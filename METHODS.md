@@ -26,9 +26,9 @@ D[Ligand Library<br/>PubChem · MedChem] --> E[Ligand Preparation<br/>Schrodinge
 
 %% --- PROTEIN PREPARATION & DOCKING ---
 C --> F[Protein Preparation<br/>Maestro Protein Preparation Wizard]
-E --> G[Docking — HTVS<br/>Schrodinger Glide HTVS]
+E --> G[Docking — VSW<br/>Schrodinger Glide VSW]
 F --> G
-G --> G2[Docking — SP and XP Rescoring<br/>Schrodinger Glide SP → XP]
+G --> G2[Docking — SP and XP Rescoring<br/>Schrodinger Glide SP]
 G2 --> H[Induced Fit Docking<br/>Prime + Glide]
 
 %% --- DESMOND 1000 ns (ALL SYSTEMS) ---
@@ -38,16 +38,16 @@ H --> I[Desmond MD — All Systems<br/>1000 ns · TIP3P · 0.15 M MgCl2]
 I --> J[Structural Analysis — Maestro<br/>RMSD · RMSF · Rg · SASA · Ligand-RMSD<br/>H-bond · Ionic · Water-bridges · Hydrophobic]
 
 %% --- DESMOND HTVS HITS ONLY ---
-I --> K{HTVS Hits?<br/>Plazomicin AbANT+SaANT<br/>Gallocatechin SaANT<br/>Apigenin-7-O-gentiobioside AbANT}
-K --> K1[Trajectory Clustering<br/>Desmond — HTVS Hits Only]
-K --> K2[dPCA + FEL + DCCM<br/>Python Pipeline — HTVS Hits]
+I --> K{VSW Hits?<br/>Plazomicin AbANT+SaANT<br/>Gallocatechin SaANT<br/>Apigenin-7-O-gentiobioside AbANT}
+K --> K1[Trajectory Clustering<br/>Desmond — VSW Hits Only]
+K --> K2[dPCA + FEL + DCCM<br/>Python Pipeline — VSW Hits]
 
 %% --- DESMOND POSITIVE CONTROLS ---
 I --> PC{Positive Controls<br/>ATP · Spectinomycin<br/>AMP-Spectinomycin<br/>AbANT + SaANT}
 PC --> PC1[dPCA + FEL + DCCM<br/>Python Pipeline — Controls]
 
-%% --- AMBER 150 ns (HTVS HITS ONLY) ---
-K --> L[AMBER14&18 MD — HTVS Hits Only<br/>150 ns · ff14SB · GAFF2<br/>TIP3P · 0.15 M MgCl2]
+%% --- AMBER 150 ns (VSW HITS ONLY) ---
+K --> L[AMBER14&18 MD — VSW Hits Only<br/>150 ns · ff14SB · GAFF2<br/>TIP3P · 0.15 M MgCl2]
 L --> L1[Binding Free Energy<br/>MM/GBSA · MM/PBSA — AMBER]
 
 %% --- COMPARATIVE OUTPUT ---
@@ -85,8 +85,8 @@ Standard structural metrics were computed within the Desmond/Maestro environment
 - Ligand RMSD
 - Protein–ligand interaction fractions: hydrogen bonds, ionic interactions, water bridges, and hydrophobic contacts
 
-#### 3.2 Trajectory Clustering: HTVS Hits Only
-Trajectory clustering was performed within Desmond/Maestro for the four HTVS-selected systems (Plazomicin · AbANT, Plazomicin · SaANT, Gallocatechin · SaANT, and Apigenin-7-O-(2G-rhamnosyl)gentiobioside · AbANT) to identify representative conformational states sampled during simulation.
+#### 3.2 Trajectory Clustering: VSW Hits Only
+Trajectory clustering was performed within Desmond/Maestro for the four VSW-selected systems (Plazomicin · AbANT, Plazomicin · SaANT, Gallocatechin · SaANT, and Apigenin-7-O-(2G-rhamnosyl)gentiobioside · AbANT) to identify representative conformational states sampled during simulation.
 
 #### 3.3 dPCA, FEL, and DCCM: HTVS Hits and Positive Controls (Python Pipeline)
 Dihedral Principal Component Analysis (dPCA), Free Energy Landscape (FEL), and Dynamic Cross-Correlation Matrix (DCCM) analyses were performed using a custom Python pipeline on Desmond 1000 ns trajectories for:
@@ -112,7 +112,7 @@ Systems simulated:
 MM/GBSA and MM/PBSA binding free energy calculations were performed on representative snapshots extracted from stable AMBER trajectory windows for the four HTVS-selected systems. Positive control systems were excluded from this analysis.
 
 ### 5. Comparative Analysis
-All structural, conformational, dynamic, and energetic metrics were integrated and compared between AbANT and SaANT, and between HTVS-selected ligands and positive controls, to identify determinants of differential inhibitor selectivity across the two enzymes.
+All structural, conformational, dynamic, and energetic metrics were integrated and compared between AbANT and SaANT, and between VSW-selected ligands and positive controls, to identify determinants of differential inhibitor selectivity across the two enzymes.
 
 ---
 
