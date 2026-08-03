@@ -235,3 +235,9 @@ Thumbs.db
 __pycache__/
 *.pyc
 *.pyo
+
+# Core pipeline scripts kept private
+scripts/dccm_pipeline.py
+scripts/dpca_pipeline.py
+scripts/fel_pipeline.py
+scripts/trj2xtc.py

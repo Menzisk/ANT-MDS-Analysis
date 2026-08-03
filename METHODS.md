@@ -159,11 +159,11 @@ All post-dynamics analysis scripts are available in this repository:
 | `RMSF.py` | Per-residue RMSF calculation |
 | `ROG.py` | Radius of gyration |
 | `SASA_RMSD.py` | SASA computation |
-| `dpca_pipeline.py` | dPCA with sin/cos transformation |
-| `fel_pipeline.py` | FEL via Boltzmann inversion |
-| `dccm_pipeline.py` | DCCM |
-| `heatmap.py` | Heatmap visualisation |
-| `trj2xtc.py` | Trajectory format conversion |
+| `heatmap.py` | Ligand Interaction heatmap visualisation |
+
+---
+
+The core dPCA, FEL, DCCM, and trajectory-conversion pipelines are maintained in a private repository as part of ongoing unpublished research and are available on request for collaboration or review (co-authorship terms apply).
 
 ---
 
