@@ -226,6 +226,7 @@ __marimo__/
 *.trr
 *.cms
 *.msj
+*.txt
 
 # System files
 .DS_Store
