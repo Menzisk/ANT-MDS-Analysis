@@ -228,6 +228,10 @@ __marimo__/
 *.msj
 *.txt
 
+# Ignore .txt files in dPCA-related folders
+dPCA_and_DCCM/*.txt
+results/**/dPCA/*.txt
+
 # System files
 .DS_Store
 Thumbs.db
