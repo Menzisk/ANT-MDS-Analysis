@@ -229,8 +229,7 @@ __marimo__/
 *.txt
 
 # Ignore .txt files in dPCA-related folders
-dPCA_and_DCCM/*.txt
-results/**/dPCA/*.txt
+dPCA_and_DCCM/*/*/dPCA/*.txt
 
 # System files
 .DS_Store
