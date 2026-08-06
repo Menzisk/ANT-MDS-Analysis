@@ -1,3 +1,10 @@
+
+![AMBER18](https://img.shields.io/badge/AMBER-18-orange?style=flat-square)
+![Schrödinger](https://img.shields.io/badge/Schr%C3%B6dinger-Maestro%2FDesmond-red?style=flat-square)
+![MD Simulation](https://img.shields.io/badge/MD-Molecular%20Dynamics-blueviolet?style=flat-square)
+![HPC](https://img.shields.io/badge/HPC-Lengau%20Cluster-informational?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+
 # ANT-MDS-Analysis
 
 Computational analysis outputs and scripts for the structural dynamics study of
