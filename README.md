@@ -35,4 +35,4 @@ Full trajectory PDB files are stored in the companion repository:
 [ANT-MDS-Database](https://github.com/Menzisk/ANT-MDS-Database)
 
 ## Reference
-Manuscript in preparation. Sikakane M. et al., 2026.
+Manuscript in preparation. Title: Plazomicin Reveals Orthologue-Specific Active-Site Plasticity in Aminoglycoside Nucleotidyltransferases Sikakane M. et al., 2026.
