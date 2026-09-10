@@ -107,4 +107,4 @@ vsw/
 
 If you use this data, please cite the associated manuscript:
 
-> Sikakane M. *et al.* (*in preparation*). Conformational dynamics and ligand recognition of  *Acinetobacter baumannii* versus it's *Staphylococcus aureus* orthologue. DOI: *to be added upon publication*.
+> Sikakane M. *et al.*2026 (*in preparation*). Plazomicin Reveals Orthologue-Specific Active-Site Plasticity in Aminoglycoside NucleotidyltransferasesDOI: *to be added upon publication*.
